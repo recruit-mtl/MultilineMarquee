@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="marquee_font_size">14dp</dimen>
+
+    <dimen name="marquee_area_two_lines">50dp</dimen>
+    <dimen name="marquee_area_one_line">25dp</dimen>
+</resources>
