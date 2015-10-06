@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@android:color/darker_gray">
+
+    <jp.co.recruit.mtl.osharetenki.multilinemarquee.ScrollViewEx
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <jp.co.recruit.mtl.osharetenki.multilinemarqueelibrary.MultiLineMarqueeTextView
+                android:id="@+id/marquee"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/marquee_area_two_lines"
+                android:padding="4dp"
+                android:text="@string/hello_world"
+                android:textSize="14dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:background="@android:color/white"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"/>
+        </LinearLayout>
+    </jp.co.recruit.mtl.osharetenki.multilinemarquee.ScrollViewEx>
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="stop"/>
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_above="@id/button_stop"
+        android:text="start"/>
+    <Button
+        android:id="@+id/button_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@id/button_start"
+        android:text="four lines"/>
+    <Button
+        android:id="@+id/button_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_above="@id/button_four"
+        android:text="three lines"/>
+    <Button
+        android:id="@+id/button_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_above="@id/button_three"
+        android:text="two lines"/>
+    <Button
+        android:id="@+id/button_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_above="@id/button_two"
+        android:text="one line"/>
+
+</RelativeLayout>
